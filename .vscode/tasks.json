@@ -1,0 +1,83 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Install programs",
+            "detail": "Install programms using aftman",
+            "command": "aftman install && exit",
+            "group": {
+                "kind": "none"
+            },
+            "problemMatcher": [],
+        },
+        {
+            "type": "shell",
+            "label": "Load depends",
+            "command": "make Packages && exit",
+            "group": {
+                "kind": "none"
+            },
+            "detail": "Install all project depends",
+            "problemMatcher": [],
+          
+        },
+        {
+            "type": "shell",
+            "label": "Publish",
+            "detail": "Putblish this library as wally package",
+            "command": "make publish && exit",
+            "group": {
+                "kind": "none"
+            },
+        },
+        {
+            "type": "shell",
+            "label": "Build tests",
+            "detail": "Build tests place",
+            "command": "make tests && exit",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Build rbxm",
+            "detail": "Build rbxm library",
+            "command": "make rbxm && exit",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Generate sourcemap",
+            "detail": "Generate sourcemap for this library",
+            "command": "make sourcemap && exit",
+            "group": {
+                "kind": "none"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Lint",
+            "detail": "Run selene",
+            "command": "make lint && exit",
+            "group": {
+                "kind": "none",
+            }
+        },
+    ],
+    "windows": {
+        "options": {
+            "shell": {
+                "executable": "cmd",
+                "args": [
+                    "/k"
+                ]
+            }
+        }
+    },
+    "version": "2.0.0"
+}
