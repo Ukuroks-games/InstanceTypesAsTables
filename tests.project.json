@@ -5,10 +5,10 @@
 		"ReplicatedStorage": {
 			"$className": "ReplicatedStorage",
 			"Packages": { 
-				"$path": "Packages"
-			},
-			"DevPackages": { 
-				"$path": "DevPackages"
+				"$className": "Folder",
+				"InstancesTypesAsTables": {
+					"$path": "src"
+				}
 			}
 		},
 		"Workspace": {
