@@ -1,9 +1,6 @@
 {
-	"name": "Packages",
+	"name": "instance-types-as-tables",
 	"tree": {
-		"$path": "Packages",
-		"yourlib": {
-			"$path": "src"
-		}
+		"$path": "src"
 	}
 }
