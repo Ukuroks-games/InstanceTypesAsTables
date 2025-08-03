@@ -1,4 +1,4 @@
-LIBNAME = yourLibName
+LIBNAME = instance-types-as-tables
 
 PACKAGE_NAME = $(LIBNAME)lib.zip
 
@@ -16,7 +16,15 @@ BUILD_DIR = build
 
 RBXM_BUILD = $(LIBNAME)lib.rbxm
 
-SOURCES = src/yourlib.luau
+SOURCES =	src/init.luau	\
+         	src/Object.luau	\
+         	src/Instance.luau	\
+         	src/GuiBase2d.luau	\
+         	src/GuiObject.luau	\
+         	src/ImageLabel.luau	\
+         	src/RBXScriptConnection.luau	\
+         	src/RBXScriptSignal.luau	\
+         	src/BindableEvent.luau
 
 TEST_SOURCES = tests/test.client.luau
 
@@ -25,8 +33,6 @@ $(BUILD_DIR):
 
 ./Packages: wally.toml
 	wally install
-	
-
 
 configure:	clean-build $(BUILD_DIR)	wally.toml	$(SOURCES)
 	$(CP) src/* $(BUILD_DIR)
