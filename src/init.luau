@@ -1,6 +1,9 @@
 local Frame = require(script.Frame)
 local GuiBase2d = require(script.GuiBase2d)
+local GuiButton = require(script.GuiButton)
+local GuiLabel = require(script.GuiLabel)
 local GuiObject = require(script.GuiObject)
+local ImageButton = require(script.ImageButton)
 local ImageLabel = require(script.ImageLabel)
 local Instance = require(script.Instance)
 local Object = require(script.Object)
@@ -11,8 +14,11 @@ export type Object = Object.Object
 export type Instance = Instance.Instance
 export type GuiBase2d = GuiBase2d.GuiBase2d
 export type GuiObject = GuiObject.GuiObject
+export type GuiLabel = GuiLabel.GuiLabel
+export type GuiButton = GuiButton.GuiButton
 export type Frame = Frame.Frame
 export type ImageLabel = ImageLabel.ImageLabel
+export type ImageButton = ImageButton.ImageButton
 
 export type RBXScriptConnection = RBXScriptConnection.RBXScriptConnection
 export type RBXScriptSignal<T> = RBXScriptSignal.RBXScriptSignal<T>

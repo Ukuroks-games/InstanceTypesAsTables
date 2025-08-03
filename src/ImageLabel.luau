@@ -1,3 +1,4 @@
+local GuiImage = require(script.Parent.GuiImage)
 local GuiObject = require(script.Parent.GuiObject)
 
 --[[
@@ -12,19 +13,6 @@ local GuiObject = require(script.Parent.GuiObject)
     Sprite sheets can be implemented through the use of `ImageRectOffset` and `ImageRectSize`. Packing multiple images into one and using this property can make your experience's image assets load much quicker, especially if you use many small icons in your GUIs.
 
 ]]
-export type ImageLabel = {
-	Image: string,
-	ImageColor3: Color3,
-	ImageContent: Content,
-	ImageRectOffset: Vector2,
-	ImageRectSize: Vector2,
-	ImageTransparency: number,
-	IsLoaded: boolean,
-	ResampleMode: Enum.ResamplerMode,
-	ScaleType: Enum.ScaleType,
-	SliceCenter: Rect,
-	SliceScale: number,
-	TileSize: UDim2,
-} & GuiObject.GuiObject
+export type ImageLabel = GuiImage.GuiImage & GuiObject.GuiObject
 
 return {}

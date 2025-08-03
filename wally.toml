@@ -3,7 +3,7 @@ name = "egor00f/instance-types-as-tables"
 
 description = "This library contain the typ exports of roblox types(with docs). It can be used for creating types that mimicking for roblox types"
 
-version = "0.1.0"
+version = "0.1.1"
 
 registry = "https://github.com/UpliftGames/wally-index"
 
